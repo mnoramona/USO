@@ -10,7 +10,7 @@ then
     fi
     
     if test $(ls /home/student/tema3-scripts-output/live.info | grep $1 | wc -1) - eq 0
-    then echo "$1 $2 $3" >> tema3-scripts-output/live.info
+    then echo "$1 $2 $3" >> /home/student/tema3-scripts-output/live.info
     else
           while read oras temp vreme;do
           if test $oras = $1
